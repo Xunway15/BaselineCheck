@@ -1,0 +1,1271 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../192.168.169.194.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../192.168.169.194.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1042 style='border-collapse:
+ collapse;table-layout:fixed;width:782pt'>
+ <col width=72 span=2 style='width:54pt'>
+ <col width=322 style='mso-width-source:userset;mso-width-alt:10304;width:242pt'>
+ <col width=72 span=8 style='width:54pt'>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 width=72 style='height:13.5pt;width:54pt'></td>
+  <td class=xl65 width=72 style='width:54pt'>章节</td>
+  <td class=xl65 width=322 style='border-left:none;width:242pt'>检查项</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>级别</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>调整要求</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>检查项说明</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>标准值</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>检查情况</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>符合性</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>调整情况</td>
+  <td class=xl65 width=72 style='border-left:none;width:54pt'>原因</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt'>0</td>
+  <td>2.1</td>
+  <td>检查是否以设置口令生存周期</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>长期不修<span style='display:none'>改密码会增加密码暴露风险，除入域服务器或服务器超管账号分段管理无需配置外，应对服务器密码最长使用期限进行限制。此检查项建议调整</span></td>
+  <td>&lt;=90</td>
+  <td>99999</td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>1</td>
+  <td>2.2</td>
+  <td>检查是否设置口令最小长度</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>密码长度<span style='display:none'>过短会增加密码被爆破风险，按照企业密码管理要求与等级保护标准，口令长度最小值应为8位。此检查项建议调整</span></td>
+  <td>&gt;=8</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>2</td>
+  <td>2.3</td>
+  <td>检查是否设置口令过期警告天数</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>除入域服<span style='display:none'>务器超管账号分段管理无需配置外，应配置密码过期提醒策略防止密码过期无法登陆。此检查项建议调整</span></td>
+  <td>&gt;=30</td>
+  <td>20</td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>3</td>
+  <td>2.4</td>
+  <td>检查设备密码复杂度策略</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>密码复杂<span style='display:none'>度过低会增加密码被爆破风险，按照企业密码管理要求与等级保护标准，密码复杂度应包含特殊字符、大小写字母。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>至少有1个大写字母、<span style='display:none'>1个小写字母、1个数字、1个特殊字符</span></td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>4</td>
+  <td>2.5</td>
+  <td>检查是否存在空口令账户</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>由于空口<span style='display:none'>令会让攻击者不需要口令进入系统，存在较大风险。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>不存在空口令账户</td>
+  <td>TRUE</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>5</td>
+  <td>2.6</td>
+  <td>检查是否设置除root之外UID为0的用户</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>不可设置<span style='display:none'>除root之外，第二个具有root权限的账户。此检查项建议调整</span></td>
+  <td>root</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>6</td>
+  <td>3.1</td>
+  <td>检查用户umask设置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>umask配置<span style='display:none'>后，创建系统用户时所赋予的权限为最高权限减去umask设置的权限，保证所创建用户不可创建其他权限用户。此检查项建议调整</span></td>
+  <td>umask077</td>
+  <td>参考子项<span style='display:none'>目</span></td>
+  <td>参考子项</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>7</td>
+  <td>3.1.1</td>
+  <td>检查/etc/csh.cshrc中umask设置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>详情参考<span style='display:none'>父项3.1</span></td>
+  <td>077/027</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>8</td>
+  <td>3.1.2</td>
+  <td>检查/etc/bashrc文件中umask设置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>详情参考<span style='display:none'>父项3.1</span></td>
+  <td>077/027</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>9</td>
+  <td>3.1.3</td>
+  <td>检查/etc/profile文件中umask设置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>详情参考<span style='display:none'>父项3.1</span></td>
+  <td>077/027</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>10</td>
+  <td>3.2</td>
+  <td>检查重要目录或文件权限设置</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>需检查重<span style='display:none'>要目录或文件权限设置是否合规，保障系统安全性，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>参考子项</td>
+  <td>参考子项</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>11</td>
+  <td>3.2.1</td>
+  <td>检查/etc/xinetd.conf文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=600</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>12</td>
+  <td>3.2.2</td>
+  <td>检查/etc/group文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=644</td>
+  <td>644</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>13</td>
+  <td>3.2.3</td>
+  <td>检查/etc/shadow文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=400</td>
+  <td>640</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>14</td>
+  <td>3.2.4</td>
+  <td>检查/etc/services文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=644</td>
+  <td>644</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>15</td>
+  <td>3.2.5</td>
+  <td>检查/etc/security目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=600</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>16</td>
+  <td>3.2.6</td>
+  <td>检查/etc/passwd文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=644</td>
+  <td>644</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>17</td>
+  <td>3.2.7</td>
+  <td>检查/etc/rc6.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>18</td>
+  <td>3.2.8</td>
+  <td>检查/etc/rc0.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>19</td>
+  <td>3.2.9</td>
+  <td>检查/etc/rc1.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>20</td>
+  <td>3.2.10</td>
+  <td>检查/etc/rc2.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>21</td>
+  <td>3.2.11</td>
+  <td>检查/etc目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>22</td>
+  <td>3.2.12</td>
+  <td>检查/etc/rc4.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>23</td>
+  <td>3.2.13</td>
+  <td>检查/etc/rc5.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>24</td>
+  <td>3.2.14</td>
+  <td>检查/etc/rc3.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>755</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>25</td>
+  <td>3.2.15</td>
+  <td>检查/etc/rc.d/init.d目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>目录不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>26</td>
+  <td>3.2.16</td>
+  <td>检查/tmp目录权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=750</td>
+  <td>1777</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>27</td>
+  <td>3.2.17</td>
+  <td>检查/etc/grub.conf文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=600</td>
+  <td>目录不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>28</td>
+  <td>3.2.18</td>
+  <td>检查/etc/grub/grub.conf文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=600</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>29</td>
+  <td>3.2.19</td>
+  <td>检查/etc/lilo.conf文件权限</td>
+  <td>一般</td>
+  <td>自行判断</td>
+  <td>参考父项3<span style='display:none'>.2</span></td>
+  <td>&gt;=600</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>30</td>
+  <td>3.3</td>
+  <td>检查重要文件属性设置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>需检查重<span style='display:none'>要目录或文件属性设置是否合规，保障系统安全性。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>参考子项</td>
+  <td>参考子项</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>31</td>
+  <td>3.3.1</td>
+  <td>检查/etc/passwd的文件属性</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>参考父项3<span style='display:none'>.3</span></td>
+  <td>i</td>
+  <td></td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>32</td>
+  <td>3.3.2</td>
+  <td>检查/etc/shadow的文件属性</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>参考父项3<span style='display:none'>.3</span></td>
+  <td>i</td>
+  <td></td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>33</td>
+  <td>3.3.3</td>
+  <td>检查/etc/group的文件属性</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>参考父项3<span style='display:none'>.3</span></td>
+  <td>i</td>
+  <td></td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>34</td>
+  <td>3.3.4</td>
+  <td>检查/etc/gshadow的文件属性</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>参考父项3<span style='display:none'>.3</span></td>
+  <td>i</td>
+  <td></td>
+  <td>FAIL</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>35</td>
+  <td>3.4</td>
+  <td>检查用户目录缺省访问权限设置</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>控制用户<span style='display:none'>缺省访问权限，当在创建新文件或目录时应屏蔽掉新文件或目录不应有的访问允许权限，防止同属于改组的其他用户及别的组的用户修改用户的文件或更高限制。此检查项建议调整</span></td>
+  <td>027</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>36</td>
+  <td>3.5</td>
+  <td>检查是否设置SSH登录前警告Banner</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>检查是否<span style='display:none'>设置ssh登陆前的警告Banner信息，警示登陆系统的人员。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>/etc/iss<span style='display:none'>ue.net</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>37</td>
+  <td>4.1</td>
+  <td>检查是否配置远程日志功能</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应对远程<span style='display:none'>日至进行筛选与审核。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux安全配<span style='display:
+  none'>置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>38</td>
+  <td>4.2</td>
+  <td>检查安全事件日志配置</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应对安全<span style='display:none'>时间日志文件进行配置。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux安全配<span style='display:
+  none'>置基线》对应章节</span></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>39</td>
+  <td>4.3</td>
+  <td>检查日志文件是否全局可写</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应配置日<span style='display:none'>志文件非全局可写，保证日至不可篡改。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>参考子项</td>
+  <td>参考子项</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>40</td>
+  <td>4.3.1</td>
+  <td>检查/var/log/cron</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>41</td>
+  <td>4.3.2</td>
+  <td>检查/var/log/secure</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>42</td>
+  <td>4.3.3</td>
+  <td>检查/var/log/messages</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>43</td>
+  <td>4.3.4</td>
+  <td>检查/var/log/boot.log</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>44</td>
+  <td>4.3.5</td>
+  <td>检查/var/log/mail</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>45</td>
+  <td>4.3.6</td>
+  <td>检查/var/log/localmessages</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>46</td>
+  <td>4.3.7</td>
+  <td>检查/var/log/spooler</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>47</td>
+  <td>4.3.8</td>
+  <td>检查/var/log/maillog</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项4<span style='display:none'>.4</span></td>
+  <td>&gt;=755</td>
+  <td>文件不存<span style='display:none'>在</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>48</td>
+  <td>4.4</td>
+  <td>检查是否对登录进行日志记录</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>应对登录<span style='display:none'>时间日志文件进行配置，保证日志的完整性。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>49</td>
+  <td>4.5</td>
+  <td>检查是否配置su命令使用情况记录</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应配置su<span style='display:none'>命令使用情况记录，保证高权限命令可审计。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>50</td>
+  <td>5.1</td>
+  <td>检查系统openssh安全配置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>openssh是<span style='display:none'>使用加密的远程登录实现，可以有效保护登录及数据的安全。此检查项建议调整</span></td>
+  <td>2</td>
+  <td>2</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>51</td>
+  <td>5.2</td>
+  <td>检查是否修改SNMP默认团体字</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>snmp的默<span style='display:none'>认团体字存在安全漏洞，容易导致服务器信息泄漏。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>52</td>
+  <td>5.3</td>
+  <td>检查使用ip协议远程维护的设备是否配置ssh协<span style='display:none'>议，禁用telnet协议</span></td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>Telnet协<span style='display:none'>议名文传输，安全性低，容易被嗅探泄漏信息。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>53</td>
+  <td>5.4</td>
+  <td>检查是否禁止root用户登录FTP</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td colspan=2 style='mso-ignore:colspan'>由于root用户权限过<span style='display:
+  none'>大，容易导致系统文件误删除。此检查项建议调整</span></td>
+  <td>略</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>54</td>
+  <td>5.5</td>
+  <td>检查是否禁止匿名用户登录FTP</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>由于匿名<span style='display:none'>用户对被黑客用来进入ftp，导致系统文件的保密性和完整性遭到破坏。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>55</td>
+  <td>6.1</td>
+  <td>检查是否设置命令行界面超时退出</td>
+  <td>重要</td>
+  <td>自行判断</td>
+  <td>根据等保<span style='display:none'>要求，建议设置超时时间不大于600s，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td>&lt;=600</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>56</td>
+  <td>6.3</td>
+  <td>检查系统coredump设置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>需要检查<span style='display:none'>系统cire dump设置，防止内存状态信息暴露，此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>57</td>
+  <td>6.4</td>
+  <td>检查历史命令设置</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>根据等保<span style='display:none'>要求，需保证历史命令文件HISTSIZE的值修改为5，此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>，</td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>58</td>
+  <td>6.5</td>
+  <td>检查是否使用PAM认证模块禁止wheel组之外的用<span style='display:none'>户su为root</span></td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>禁止wheel<span style='display:none'>组外用户使用su命令，提高操作系统的完整性。此检查项建议调整</span></td>
+  <td>s参考《Li<span style='display:none'>nux系统安全配置基线》对应章节</span></td>
+  <td>略</td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>59</td>
+  <td>6.6</td>
+  <td>检查是否对系统账户进行登录限制</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>对系统账<span style='display:none'>户登录进行限制，禁止账户交互式登录。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL<span style='mso-spacerun:yes'>&nbsp;&nbsp;</span></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>60</td>
+  <td>6.7</td>
+  <td>检查密码重复使用次数限制</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>检测密码<span style='display:none'>重复使用次数，预防密码重复使用被爆破的风险。此检查项建议调整</span></td>
+  <td>&gt;=5</td>
+  <td></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>61</td>
+  <td>6.8</td>
+  <td>检查账户认证失败次数限制</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应配置密<span style='display:none'>码失败次数限制，预防密码被爆破的风险。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>62</td>
+  <td>6.9</td>
+  <td>检查是否关闭ip伪装和绑定多ip功能</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应关闭此<span style='display:none'>条检查项配置内容，使系统操作责任到人。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>参考子项</td>
+  <td>参考子项</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>63</td>
+  <td>6.9.1</td>
+  <td>检查是否关闭多ip绑定</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>参考父项6<span style='display:none'>.9</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>64</td>
+  <td>6.10</td>
+  <td>检查是否限制远程登录IP范围</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>应配置相<span style='display:none'>关设置防止未知ip远程登录，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>65</td>
+  <td>6.11</td>
+  <td>检查别名文件/etc/aliases</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>/etc/ali<span style='display:none'>ases是linux系统下的一种配置文件，作用是将使用者名称进行转换，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>66</td>
+  <td>6.12</td>
+  <td>检查拥有suid和sgid权限的文件</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td colspan=3 style='mso-ignore:colspan'>suid的管理上有漏洞，易被黑客<span
+  style='display:none'>利用suid来踢拳，来放后门控制linux主机。此检查项建议调整</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>67</td>
+  <td>6.13</td>
+  <td>检查是否配置定时自动屏幕锁定(适用于图形化<span style='display:none'>界面)</span></td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>对具有图<span style='display:none'>形化界面的设备应配置定时自动屏幕锁定。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>68</td>
+  <td>6.14</td>
+  <td>检查系统内核参数配置</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>该项配置<span style='display:none'>主要为了缓解拒绝服务攻击。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>1</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>69</td>
+  <td>6.15</td>
+  <td>检查是否按组进行账号管理</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>该项配置<span style='display:none'>主要偏向于对系统用户的管理，如账户已分组管理，该检查项可以跳过。此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>70</td>
+  <td>6.16</td>
+  <td>检查是否按用户分配账号</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>该项配置<span style='display:none'>主要偏向于对系统用户的管理，如有未知账号，清及时调整与关闭。此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>71</td>
+  <td>6.17</td>
+  <td>检查root用户的path环境变量</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>如果将（.<span style='display:none'>和..）这来两者写入root的环境变量，执行脚本时，输入脚本名字后，系统会在当前的目录下执行该脚本，如脚本有危险命令，将会对系统造成较大影响。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>72</td>
+  <td>6.18</td>
+  <td>检查系统是否禁用Ctrl+Alt+Delete组合键</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>linux操作<span style='display:none'>系统只要按下Ctrl+Alt+Del快捷键，系统有时会重启。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>73</td>
+  <td>6.19</td>
+  <td>检查系统是否关闭系统信任机制</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>如不关闭<span style='display:none'>系统信任机制，在信任地址列表中的来访用户可不用提供口令就在本地计算机上执行远程命令。此检查项建议调整</span></td>
+  <td align=right>0</td>
+  <td>参考子项</td>
+  <td>参考子项</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>74</td>
+  <td>6.19.1</td>
+  <td>检查是否存在equiv文件</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>参考父项6<span style='display:none'>.19</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>75</td>
+  <td>6.19.2</td>
+  <td>检查是否存在rhosts文件</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>参考父项6<span style='display:none'>.19</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>76</td>
+  <td>6.20</td>
+  <td>检查磁盘空间占用率</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>磁盘动态<span style='display:none'>分区空间不足，可能会导致系统卡慢与崩溃。此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td>&lt;=80</td>
+  <td></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>77</td>
+  <td>6.21</td>
+  <td>检查是否删除了潜在危险文件</td>
+  <td>重要</td>
+  <td>建议调整</td>
+  <td>危险文件<span style='display:none'>为删除可能导致用户无口令登录系统，存在较大风险。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>，，</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>78</td>
+  <td>6.22</td>
+  <td>检查是否删除与设备运行，维护等工作无关的账<span style='display:none'>号</span></td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>该项配置<span style='display:none'>主要偏向于对系统用户的管理，如有未知账号，请及时关闭。此项建议整改</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>79</td>
+  <td>6.23</td>
+  <td>检查是否配置用户所需最小权限</td>
+  <td>一般</td>
+  <td>建议调整</td>
+  <td>权限配置<span style='display:none'>应为满足使用场景的最小化权限。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>644，640<span style='display:none'>，644</span></td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>80</td>
+  <td>6.24</td>
+  <td>检查是否关闭数据包转发功能</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>Linux系统<span style='display:none'>默认是禁止数据包转发的，如非系统需要，请关闭该功能。此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td align=right>0</td>
+  <td>0</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>81</td>
+  <td>6.25</td>
+  <td>检查是否关闭不必要的服务和端口</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>不必要的<span style='display:none'>服务会消耗系统内存，且存在安全隐患，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>82</td>
+  <td>6.26</td>
+  <td>检查是否使用NTP(网络时间协议)保持时间同步</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>应保证win<span style='display:none'>dows系统的时间同步，提高系统日志的准确性。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>83</td>
+  <td>6.27</td>
+  <td>检查NFS(网络文件系统)服务配置</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>如果需要N<span style='display:none'>FS服务，需要限制能够访问NFS服务的IP范围，如果没有必要，需要停止NFS服务。此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>84</td>
+  <td>6.28</td>
+  <td>检查是否安装OS补丁</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>及时安装<span style='display:none'>操作系统补丁保证系统稳定性，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>85</td>
+  <td>6.29</td>
+  <td>检查是否设置SSH成功登录后Banner</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>检查是否<span style='display:none'>设置ssh成功登录后的Banner信息，提示登录系统的人员。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Activ<span
+  style='display:none'>e: active (running) since Mon 2023-04-24 10:16:47 CST;
+  42min ago</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>86</td>
+  <td>6.30</td>
+  <td>检查FTP用户上传的文件所具有的权限</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>限制FTP用<span style='display:none'>户登录后上传文件的属性，保证同组用户、其他用户不得有写入权限。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应要求</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>87</td>
+  <td>6.31</td>
+  <td>检查FTPbanner设置</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>检查是否<span style='display:none'>设置ftp成功登录后的Banner信息，提示登录系统人员。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>略</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>88</td>
+  <td>6.32</td>
+  <td>检查/usr/bin/目录下可执行文件的拥有者属性</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>可执行文<span style='display:none'>件拥有s属性在运行时可所以获得拥有者的权限，所以为了安全需要，需要作出修改。此检查项建议调整</span></td>
+  <td>参考《Lin<span style='display:none'>ux系统安全配置基线》对应章节</span></td>
+  <td>略</td>
+  <td>FAIL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>89</td>
+  <td>6.33</td>
+  <td>检查Telnetbanner设置</td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>检查是否<span style='display:none'>设置telnet成功登录后的Banner信息，提示登录系统的人员。此检查项建议调整</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>90</td>
+  <td>6.34</td>
+  <td>检查是否限制FTP用户登录后能访问的目录</td>
+  <td>可选</td>
+  <td>自行判断</td>
+  <td>限制FTP用<span style='display:none'>户登录后能访问的目录，防止机密文件非授权访问，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>91</td>
+  <td>6.35</td>
+  <td>检查是否关闭不必要的服务和端口</td>
+  <td>重要</td>
+  <td>自行判断</td>
+  <td>不必要的<span style='display:none'>端口和服务会扩大系统的被攻击面，此检查项建议系统管理员根据系统情况自行判断</span></td>
+  <td colspan=2 style='mso-ignore:colspan'>参考《Linux系统安<span style='display:
+  none'>全配置基线》对应章节</span></td>
+  <td>MANUAL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>92</td>
+  <td>6.36</td>
+  <td>检查内核版本是否处于CVE-2021-43267漏洞影<span style='display:none'>响范围</span></td>
+  <td>可选</td>
+  <td>建议调整</td>
+  <td>CVE-2021<span style='display:none'>-43267漏洞是Linux内核TIPC模块中的一个堆溢出漏洞，攻击者利用该漏洞可以实现本地或远程代码执行漏洞</span></td>
+  <td>5.10-rc1<span style='display:none'>&lt;Linux kernel &lt;5.14.16</span></td>
+  <td>4.4.0</td>
+  <td>TRUE</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>93</td>
+  <td colspan=4 style='mso-ignore:colspan'>---------------------------- Summary
+  -----------------------------</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>94</td>
+  <td colspan=2 style='mso-ignore:colspan'>全部检测项: 57</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>95</td>
+  <td colspan=2 style='mso-ignore:colspan'>通过检测项: 24</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>96</td>
+  <td colspan=2 style='mso-ignore:colspan'>失败检测项: 19</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>97</td>
+  <td colspan=2 style='mso-ignore:colspan'>手工检测项: 13</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>98</td>
+  <td colspan=4 style='mso-ignore:colspan'>------------------------------------------------------------------</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>99</td>
+  <td>扫描时间:</td>
+  <td>Mon Apr 24 10:59:39 CST 2023</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>100</td>
+  <td>服务端IP:</td>
+  <td>192.168.169.194</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl65 style='height:13.5pt;border-top:none'>101</td>
+  <td>任务id:</td>
+  <td>4</td>
+  <td colspan=8 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=322 style='width:242pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block title %}   {% endblock %}
+{% block css %}
+     <link rel="stylesheet" href="{% static 'adminlet-2.4.10/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css' %}">
+{% endblock %}
+{% block content %}
+<section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">本系统适用于局域网环境下的基线检测。</h3>
+                    </div>
+                    <div class="box-body">
+                        <table id="assets_table" class="table table-bordered table-striped" >
+                          <tr>
+                            <th>1.创建任务。</th>
+                           
+                          </tr> 
+                          <tr>
+                            <th>2.下载检测脚本，并将检测脚本放在要检测的主机上并执行（该步需要保证服务端与主机网络互通）。</th>
+                            
+
+                          </tr> 
+                          <tr>
+                            <th>3.检测结束，主机会将结果发送到服务端。</th>
+                            
+
+                          </tr>
+                          <tr>
+                            <th>4.在服务端即可查看检测结果。</th>
+                            
+
+                          </tr> 
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+{% endblock %}

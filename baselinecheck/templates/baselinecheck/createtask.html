@@ -1,0 +1,102 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block title %}   {% endblock %}
+{% block css %}
+     <link rel="stylesheet" href="{% static 'adminlet-2.4.10/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css' %}">
+{% endblock %}
+{% block content %}
+<section>
+    <div class="box">
+        <div class="box-header with-border">
+            <h3 class="box-title">创建任务</h3>
+        </div>
+        <div class="box-body">
+            
+
+
+            <form id="taskform" action="{% url 'baselinecheck:create_task' %}" method="post" class="form-inline" role="form" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label class="label label-info" for="test">任务名称</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input name="taskname" id="taskname" type="text">
+                        </div>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label class="label label-info" for="test">备注</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input name="remark" id="remark" type="textarea">
+                        </div>
+                    </div>
+                </div>
+               
+                <button  type='submit'  class="btn btn-primary" >
+                    生成检测脚本
+                </button>
+            </form>
+            
+            
+            
+        </div>
+    </div>
+   
+
+      
+       
+</section>
+
+{% endblock %}
+{% block script %}
+
+<script src="{% static 'adminlet-2.4.10/bower_components/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'adminlet-2.4.10/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+
+<script>
+
+// 单选框点击事件
+
+// using jQuery
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+var csrftoken = getCookie('csrftoken');
+
+function csrfSafeMethod(method) {
+    // 这些HTTP方法不要求CSRF包含
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        }
+    }
+});
+
+
+</script>
+
+{% endblock %}

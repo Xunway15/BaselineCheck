@@ -1,0 +1,146 @@
+{% extends 'base.html'%}
+{% load static%}
+
+
+{% block title %}   {% endblock %}
+{% block css %}
+     <link rel="stylesheet" href="{% static 'adminlet-2.4.10/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css' %}">
+<style>
+/* td{
+  word-break:break-all;
+  vertical-align: middle!important;
+} */
+table{
+	table-layout:fixed;
+}	
+td{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+</style>
+{% endblock %}
+{% block content %}
+
+    <div class="box">
+
+      <div class="box-header with-border">
+
+         <h3 class="box-title">任务基础信息</h3>
+
+         <div class="box-tools pull-right">
+           <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+             <i class="fa fa-minus"></i></button>
+           <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+             <i class="fa fa-times"></i></button>
+         </div>
+       </div>
+       <div class="box-body">
+         <table class="table table-bordered table-striped dataTable">
+           <tr>
+             <td>名称:{{task_detail.name}}</td>
+             <td>任务创建时间:{{task_detail.time}}</td>
+           </tr>
+           <tr>
+             <td>备注:{{task_detail.remark}}</td>
+             <td>服务端IP:{{task_detail.serverIp }}</td>
+           </tr>
+           
+         </table>
+       </div>
+    </div>
+
+
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+
+        <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">主机列表<small></small></h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+
+            <table id="host_table" class="table table-responsive table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>主机序号</th>
+                        <th>主机IP</th>
+                        <th>MAC地址</th>
+                        <th>网络信息</th>
+                        <th>系统版本</th>
+                        <th>内核版本</th>
+                        <th>检测时间</th>
+                        <th>检测详情</th>
+                        <th>删除主机</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                {% for host in host_list %}
+
+                    <tr>
+                        <td title="{{ host.id }}">{{ host.id }}</td>
+                        <td title="{{ host.ip }}">{{ host.ip }}</td>
+                        <td title="{{ host.macaddr }}">{{ host.macaddr }}</td>
+                        <td title="{{ host.netinfo }}">{{ host.netinfo }}</td>
+                        <td title="{{ host.osversion }}">{{ host.osversion }}</td>
+                        <td title="{{ host.kernelversion }}">{{ host.kernelversion }}</td>
+                        <td title="{{ host.time }}">{{ host.time }}</td>
+                        <td>
+                          <a href={% url 'baselinecheck:hostinfo' host.task_id host.id %}>主机详情</a>
+                        </td>
+                        <td>
+                          <a href={% url 'baselinecheck:deletehost' host.task_id host.id %}>删除</a>
+                        </td>
+
+                    </tr>
+                {% empty %}
+                <tr>没有数据</tr>
+                {% endfor %}
+
+                </tbody >
+                {% comment %} <tfoot>
+                    <tr>
+                      <th>序号</th>
+                      <th>时间</th>
+                      <th>任务名称</th>
+                      <th>服务端IP</th>
+                      <th>检测脚本下载</th>
+                      <th>备注</th>
+                      <th>详情</th>
+                      <th>删除</th>
+                    </tr>
+                </tfoot> {% endcomment %}
+            </table>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+        </div>
+    <!-- /.col -->
+      </div>
+    <!-- /.row -->
+    </section>
+
+{% endblock %}
+{% block script %}
+ <script src="{% static 'adminlet-2.4.10/bower_components/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'adminlet-2.4.10/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+<script>
+  $(function () {
+    $('#host_table').DataTable({
+      "paging": true,       <!-- 允许分页 -->
+      "lengthChange": true, <!-- 允许改变每页显示的行数 -->
+      "searching": true,    <!-- 允许内容搜索 -->
+      "ordering": true,     <!-- 允许排序 -->
+      "info": true,         <!-- 显示信息 -->
+      "autoWidth": false    <!-- 固定宽度 -->
+    });
+  });
+
+
+
+</script>
+{% endblock %}
